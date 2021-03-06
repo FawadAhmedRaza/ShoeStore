@@ -1,20 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import logo from '../Images/logo.png'
+import {Link} from 'react-router-dom'
 
 export const NavBar=()=>{
     return(
 <>
-<nav class=" shadow navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src={logo} width="150"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav className=" shadow navbar navbar-expand-lg navbar-light bg-light">
+  <a className="navbar-brand"><img src={logo} width="100"/></a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Men <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Women</a>
-      <a class="nav-item nav-link" href="#">Kids</a>
+  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div className="navbar-nav">
+    <Link className="nav-item nav-link active" to={'/'}>Home <span className="sr-only"></span></Link>
+      <Link className="nav-item nav-link active" to={'products'}>Products <span className="sr-only"></span></Link>
+      <Link className="nav-item nav-link active" to={'about'}>About US <span className="sr-only"></span></Link>
+     
+
+     
     </div>
   </div>
 </nav>

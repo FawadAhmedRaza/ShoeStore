@@ -1,12 +1,11 @@
     import React, { createContext } from 'react';
 
     const Products = {
+        
             "Nike-Air-Force-1-'07-Craft": {
                 name: "Nike Air Force 1 '07 Craft",
                 img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/95e882a6-384c-4638-9055-e45f79672637/air-force-1-07-craft-shoe-jCGMCm.jpg"
-            }
-
-        , "Nike-Air-VaporMax-Evo": {
+            }, "Nike-Air-VaporMax-Evo": {
             name: "Nike Air VaporMax Evo",
             img: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a16929ed-fff6-4f62-9ecb-7df009579f2d/jordan-ma2-shoe-qw1Z6m.jpg"
         }
@@ -34,7 +33,8 @@
             name: "Nike D/MS/X Waffle",
             img: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8e488a06-528f-48e5-8368-691009080ad0/custom-nike-air-max-90-premium-by-you.jpg"
         }
-    }
+       
+            }
 
     export const GlobalContext = createContext(Products)
     export const GlobalProvider=({children})=>{
